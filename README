@@ -1,0 +1,22 @@
+Objective-C Library
+
+Base64 Encode
+  -NSDataAdditions.h
+  -NSDataAdditions.m
+  -NSStringAdditions.h
+  -NSStringAdditions.m
+
++ usage
+
+NSData to base64 NSString
+
+NSData *data       = [NSData dataWithContentsOfFile:fileName]; // load some data
+NSString* b64str   = [NSString base64StringFromData:data length:[data length]];
+
+
+base64 NSString to NSData
+
+NSData *decodeData = [NSData base64DataFromString:b64str];
+
+from Any base64 library on iphone-sdk?
+(http://stackoverflow.com/questions/392464/any-base64-library-on-iphone-sdk)
